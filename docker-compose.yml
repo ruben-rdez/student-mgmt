@@ -1,0 +1,35 @@
+version: "3.9"
+services:
+
+  student-mgmt:
+    image: student-mgmt
+    container_name: student-mgmt-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - student-network
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql
+    container_name: mysql_docker
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: studentsdb
+      MYSQL_USER: docker_user
+      MYSQL_PASSWORD: docker_pwd
+    ports:
+      - "3307:3306"
+    networks:
+      - student-network
+    volumes:
+      - student-volume:/var/lib/mysql
+
+networks:
+  student-network:
+volumes:
+  student-volume:
