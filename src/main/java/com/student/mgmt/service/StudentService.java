@@ -1,9 +1,9 @@
 package com.student.mgmt.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
-
 import com.student.mgmt.entity.Student;
 import com.student.mgmt.exception.EmailAlreadyExistsException;
 import com.student.mgmt.exception.StudentNotFoundException;
@@ -47,7 +47,7 @@ public class StudentService {
         Student student = studentRepository.findById(id)
                 .orElseThrow(() -> new StudentNotFoundException("Student not found"));
 
-        if(studentRepository.findByEmail(studentDto.getEmail()).isPresent()) {
+        if(studentRepository.findByIdAndEmail(id, studentDto.getEmail()).isPresent()) {
             throw new EmailAlreadyExistsException("Student with email " + studentDto.getEmail() + " already exists");
         }
  
