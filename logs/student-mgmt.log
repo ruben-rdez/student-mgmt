@@ -514,3 +514,33 @@ Caused by: java.net.UnknownHostException: mysql_docker
 2025-03-19T11:02:25.754-06:00  INFO 8048 --- [student-mgmt] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 2025-03-19T11:03:54.206-06:00  INFO 8048 --- [student-mgmt] [http-nio-8080-exec-9] c.student.mgmt.listener.AuditListener    : Audit for Updating Student : 30 at 2025-03-19T11:03:54.205355100
 2025-03-19T11:05:05.937-06:00  INFO 8048 --- [student-mgmt] [http-nio-8080-exec-6] c.student.mgmt.listener.AuditListener    : Audit for Updating Student : 28 at 2025-03-19T11:05:05.937213600
+2025-03-19T11:44:33.279-06:00  INFO 8476 --- [student-mgmt] [main] c.s.mgmt.StudentMgmtApplicationTests     : Starting StudentMgmtApplicationTests using Java 22.0.2 with PID 8476 (started by Ruben in C:\Users\Ruben\Documents\Cursor\student-mgmt)
+2025-03-19T11:44:33.299-06:00  INFO 8476 --- [student-mgmt] [main] c.s.mgmt.StudentMgmtApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-03-19T11:44:42.010-06:00  INFO 8476 --- [student-mgmt] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-19T11:44:42.535-06:00  INFO 8476 --- [student-mgmt] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 478 ms. Found 2 JPA repository interfaces.
+2025-03-19T11:44:48.484-06:00  INFO 8476 --- [student-mgmt] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-19T11:44:48.961-06:00  INFO 8476 --- [student-mgmt] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-19T11:44:49.174-06:00  INFO 8476 --- [student-mgmt] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-19T11:44:51.449-06:00  INFO 8476 --- [student-mgmt] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-19T11:44:51.687-06:00  INFO 8476 --- [student-mgmt] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-19T11:44:59.170-06:00  INFO 8476 --- [student-mgmt] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61d7bb61
+2025-03-19T11:44:59.175-06:00  INFO 8476 --- [student-mgmt] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-19T11:45:00.752-06:00  WARN 8476 --- [student-mgmt] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-19T11:45:00.756-06:00  WARN 8476 --- [student-mgmt] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-19T11:45:00.960-06:00  INFO 8476 --- [student-mgmt] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-19T11:45:07.101-06:00  INFO 8476 --- [student-mgmt] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-19T11:45:08.327-06:00  INFO 8476 --- [student-mgmt] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-19T11:45:12.705-06:00  INFO 8476 --- [student-mgmt] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-19T11:45:18.351-06:00  WARN 8476 --- [student-mgmt] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-19T11:45:30.395-06:00  INFO 8476 --- [student-mgmt] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-19T11:45:31.597-06:00  INFO 8476 --- [student-mgmt] [main] c.s.mgmt.StudentMgmtApplicationTests     : Started StudentMgmtApplicationTests in 61.242 seconds (process running for 73.721)
+2025-03-19T11:45:43.716-06:00  INFO 8476 --- [student-mgmt] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-19T11:45:43.721-06:00  INFO 8476 --- [student-mgmt] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-19T11:45:43.922-06:00  INFO 8476 --- [student-mgmt] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

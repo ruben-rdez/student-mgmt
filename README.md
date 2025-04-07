@@ -34,6 +34,10 @@ This is a Spring Boot application for managing students. It provides a REST API 
 - Git
 - GitHub
 - Docker
+- Logging with SLF4J
+- Resilience4j for fault tolerance
+- Rate Limiting with resilience4j
+- Exception handling
 
 ## Installation
 

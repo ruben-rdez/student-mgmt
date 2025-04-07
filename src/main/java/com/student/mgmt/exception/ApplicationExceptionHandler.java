@@ -23,7 +23,7 @@ public class ApplicationExceptionHandler {
         return errorHandlerMap;
     }
 
-    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(StudentNotFoundException.class)
     public Map<String, String> handleStudentNotFoundException(
             StudentNotFoundException studentNotFoundException){
