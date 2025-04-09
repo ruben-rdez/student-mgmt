@@ -13,6 +13,7 @@ COPY ./.mvn /app/.mvn
 COPY ./mvnw /app
 
 #DOWNLOAD DEPENDENCIES
+RUN chmod +x ./mvnw
 RUN ./mvnw dependency:go-offline
 
 #COPY THE SOURCE CODE INTO THE CONTAINER
